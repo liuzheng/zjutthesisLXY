@@ -1,0 +1,58 @@
+%%% Zhejiang University of Technology 
+%%% !Mode\dots "TeX:UTF-8"
+%%% author : liuzheng712@gmail.com(刘正)
+
+
+
+\pagenumbering{roman}          % 页码数字
+\setcounter{page}{1}            % 页码起始数字
+\yemeiclean
+
+\begin{quote}
+\centering
+\xiaoyi\song\timu\\[-32pt]~\newline
+
+\xiaosi\song{学生姓名：\xuesheng~~~~指导教师：\laoshi\\[12pt]浙江工业大学\xueyuan}
+\\[1.5cm]
+\xiaosan\hei{摘~~~~要}
+\phantomsection					% 用于超链接指向
+\addcontentsline{toc}{chapter}{中文摘要}
+
+\begin{flushleft}
+\setlength{\parindent}{1.6em}     % 首行缩进2字符
+~
+
+\fontsize{11.9pt}{15pt}\selectfont\times\kai
+\input{body/abstractcn}
+~\\[20pt]
+\setlength{\parindent}{0em}
+\hei{关键词}：\times\guanjianci
+\end{flushleft}
+\end{quote}
+
+%%%%%%%%%%%%%%%%%%%%%%Abstract%%%%%%%%%%%%%
+\begin{quote}
+\centering
+\times
+\sanhao
+\newpage\Timu\\[-32pt]~\newline
+
+\xiaosi{Student:\student~~~~Advisor:\teacher\\[12pt]\college\\Zhejiang University of Technology}
+\\[0.5cm]
+\xiaosan{Abstract}
+\phantomsection					% 用于超链接指向
+\addcontentsline{toc}{chapter}{英文摘要}
+\begin{flushleft}
+\setlength{\parindent}{1.6em}     % 首行缩进2字符
+~\\[-1cm]
+\fontsize{12pt}{15pt}\selectfont
+\input{body/abstracten}
+~\\[12pt]
+\setlength{\parindent}{0em}
+Keywords:~\keywords
+\end{flushleft}
+
+\end{quote}
+\newpage
+\pagenumbering{arabic}          % 页码数字
+\setcounter{page}{1}            % 页码起始数字
