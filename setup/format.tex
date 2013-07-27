@@ -1,0 +1,310 @@
+%%% Zhejiang University of Technology 
+%%% !Mode\dots "TeX:UTF-8"
+%%% author : liuzheng712@gmail.com(刘正)
+
+\pagenumbering{arabic}          % 页码数字
+\setcounter{page}{1}            % 页码起始数字
+\renewcommand{\sfdefault}{phv}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+
+% 行距 1.25
+\renewcommand{\baselinestretch}{1.25}
+\newcommand{\tablecell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}   % 表格内换行，用法\tablecell{c}{balabalba\\balabalba}
+\graphicspath{{figures/}}  		% 图路径 
+
+%%%%%%字体部分%%%%%%%%
+\newfontfamily\fangsong{Adobe Fangsong Std}     % 仿宋
+\newfontfamily\hei{Adobe Heiti Std}             % 黑体
+\newfontfamily\kai{Adobe Kaiti Std}             % 楷体
+\newfontfamily\song{Adobe Song Std}             % 宋体
+\newfontfamily\Bsong{华文中宋}             % 粗宋体
+\newfontfamily\monaco{Monaco}
+\newfontfamily\times{Times New Roman}
+\newcommand{\shijian}{\number\year~年~\number\month~月~\number\day~日}
+
+%%%%%%%字号%%%%%%%
+%%%%%%单倍%%%%%%%%
+\newcommand{\yihao}{\fontsize{26pt}{26pt}\selectfont}       % 一号, 单倍行距
+\newcommand{\xiaoyi}{\fontsize{24pt}{24pt}\selectfont}      % 小一, 单倍行距
+\newcommand{\erhao}{\fontsize{22pt}{22pt}\selectfont}       % 二号, 单倍行距
+\newcommand{\xiaoer}{\fontsize{18pt}{18pt}\selectfont}      % 小二, 单倍行距
+\newcommand{\sanhao}{\fontsize{16pt}{16pt}\selectfont}      % 三号, 单倍行距
+\newcommand{\xiaosan}{\fontsize{15pt}{15pt}\selectfont}     % 小三, 单倍行距
+\newcommand{\sihao}{\fontsize{14pt}{14pt}\selectfont}       % 四号, 单倍行距
+\newcommand{\xiaosi}{\fontsize{12pt}{12pt}\selectfont}      % 小四, 单倍行距
+\newcommand{\wuhao}{\fontsize{10.5pt}{10.5pt}\selectfont}   % 五号, 单倍行距
+\newcommand{\xiaowu}{\fontsize{9pt}{9pt}\selectfont}        % 小五, 单倍行距
+
+%%%%%%1.5倍%%%%%%%
+\newcommand{\Yihao}{\fontsize{26pt}{39pt}\selectfont}       % 一号, 1.5倍行距
+\newcommand{\Xiaoyi}{\fontsize{24pt}{36pt}\selectfont}      % 小一, 1.5倍行距
+\newcommand{\Erhao}{\fontsize{22pt}{33pt}\selectfont}       % 二号, 1.5倍行距
+\newcommand{\Xiaoer}{\fontsize{18pt}{27pt}\selectfont}      % 小二, 1.5倍行距
+\newcommand{\Sanhao}{\fontsize{16pt}{24pt}\selectfont}      % 三号, 1.5倍行距
+\newcommand{\Xiaosan}{\fontsize{15pt}{22.5pt}\selectfont}   % 小三, 1.5倍行距
+\newcommand{\Sihao}{\fontsize{14pt}{21pt}\selectfont}       % 四号, 1.5倍行距
+\newcommand{\Xiaosi}{\fontsize{12pt}{18pt}\selectfont}      % 小四, 1.5倍行距
+\newcommand{\XIaosi}{\fontsize{12pt}{15pt}\selectfont}      % 小四, 1.25倍行距
+\newcommand{\Wuhao}{\fontsize{10.5pt}{15.75pt}\selectfont}  % 五号, 1.5倍行距
+\newcommand{\Xiaowu}{\fontsize{9pt}{13.5pt}\selectfont}     % 小五, 1.5倍行距
+
+%%%%%%%%%% Table, Figure and Equation %%%%%%%%%%%%%%%%%
+\renewcommand{\tablename}{\song\wuhao 表}                                     % 插表题头
+\renewcommand{\figurename}{\song\wuhao 图}                                    % 插图题头
+\renewcommand{\thefigure}{\arabic{chapter}-\arabic{figure}}       % 使图编号为 7-1 的格式 %\protect{~}
+%\renewcommand{\thesubfigure}{\alph{subfigure})}                   % 使子图编号为 a) 的格式
+%\renewcommand{\thesubtable}{(\alph{subtable})}                    % 使子表编号为 (a) 的格式
+\renewcommand{\thetable}{\arabic{chapter}-\arabic{table}}         % 使表编号为 7-1 的格式
+\renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}   % 使公式编号为 7-1 的格式
+%%%%%%%%%%%%章节定义%%%%%%%%%%
+\renewcommand{\contentsname}{\song\xiaoer 目\quad录} 
+\renewcommand{\listfigurename}{\song\xiaoer 图\quad列} 
+\renewcommand{\listtablename}{\song\xiaoer 表\quad列} 
+
+%%%%%%%%%% Chapter and Section %%%%%%%%%%%%%
+\setcounter{secnumdepth}{4}
+\setlength{\parindent}{2em}
+\renewcommand{\chaptername}{第\xCJKnumber{\thechapter}章}
+\titleformat{\chapter}{\centering\erhao\hei\bfseries}{\hei\chaptername}{2em}{}
+\titlespacing{\chapter}{0pt}{0.1\baselineskip}{0.8\baselineskip}
+
+\titleformat{\section}{\sihao\hei\bfseries}{\hei\thesection}{1em}{}
+\titlespacing{\section}{0pt}{\baselineskip}{0.3\baselineskip}
+
+\titleformat{\subsection}{\sihao\hei\bfseries}{\hei\thesubsection}{1em}{}
+\titlespacing{\subsection}{0pt}{0.1\baselineskip}{0.3\baselineskip}
+
+\titleformat{\subsubsection}{\sihao\hei}{\thesubsubsection}{1em}{}
+\titlespacing{\subsubsection}{0pt}{0.05\baselineskip}{0.1\baselineskip}
+
+
+%\let\cleardoublepage\relax % delete the black page
+
+%%%%%%%%%%%%%%%%%%%%%目录设定%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\titlecontents{chapter}[0em]{\vspace{1\baselineskip}\Xiaosi\times}{\Xiaosi\song 第\xCJKnumber{\thecontentslabel}章\quad}{}{\titlerule*[0.7pc]{.}\contentspage}
+\titlecontents{chapter}[0em]{\Xiaosi\times}{\Xiaosi\song 第\xCJKnumber{\thecontentslabel}章\quad}{}{\titlerule*[0.7pc]{.}\contentspage}
+\titlecontents{section}[2em]{\Xiaosi\times}{\Xiaosi\song\thecontentslabel\quad}{}{\titlerule*[0.7pc]{.}\contentspage}
+\titlecontents{section}[2em]{\Xiaosi\times}{\Xiaosi\song\thecontentslabel\quad}{}{\titlerule*[0.7pc]{.}\contentspage}
+\titlecontents{subsection}[4em]{\Xiaosi\times}{\Xiaosi\song\thecontentslabel\quad}{}{\titlerule*[0.7pc]{.}\contentspage}
+%%%%%%%%%%%%%%%%%%%%%自定义目录形式%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%自定义目录格式%%%%%%%%%%%%%%%%%%%
+%1.定义形式如下4种
+%\def\mlA#1#2#3{\par\noindent\hspace*{1 true cm}\parbox[b]{12.3 true cm}{\protect\hspace*{-1 true cm}{#1}\quad{#2}~\dotfill~}\hbox to1.0 true cm{~(\hss#3\hss)}\vspace{2mm}}
+%/def/mlB#1#2#3{/par/noindent/hspace*{1 true cm}/parbox[b]{12.3 true cm}{/protect/hspace*{-1 true cm}{#1}~/dotfill~/hbox{#2}}/hbox to1.0 true cm{~(/hss#3/hss)}/vspace{2mm}}
+%/def/mlC#1#2{/par/noindent/hspace*{1 true cm}/parbox[b]{12.3 true cm}{/protect/hspace*{-1 true cm}/quad{#1}~/dotfill~}/hbox to1.0 true cm{~(/hss#2/hss)}/vspace{2mm}}
+%/def/mlD#1#2{/par/noindent/hspace*{1 true cm}/parbox[b]{12.3 true cm} {/protect/hspace*{-1 true cm}/quad{#1}~/hfill~}/hbox to1.0 true cm{~(/hss#2/hss)}/vspace{2mm}}
+%2.使用方法如下：
+%\mlA{title}{author}{page no.}
+%效果： title author .................. (page no.)
+%\mlB{title}{author}{page no.}
+%效果：title .......................... author (page no.)
+%\mlC{title}{page no.}
+%效果： title ......................... (page no.)
+%\mlD{title}{page no.}
+%效果： title (page no.)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% Code %%%%%%%%%%%%%%%%%%%%%%%%%
+\lstset{
+        language=matlab,            % 设定默认语言为MATLAB
+        keywords={break,case,catch,continue,else,elseif,end,for,function,
+        global,if,otherwise,persistent,return,switch,try,while}, %设定关键词列表
+        keywordstyle=\color{blue},  % 关键词为蓝色
+        commentstyle=\color{dkgreen},       % 注释为绿色
+        stringstyle=\color{red},    % 字符串为红色
+        basicstyle=\xiaosi\monaco, % 基本字体的字号
+        breaklines=true,            % 自动将长代码行换行排版
+        breakatwhitespace=true,     % 断行只在空格处
+        extendedchars=false,        % 解决代码跨页时，章节标题页眉等汉字不显示问题
+        showspaces=false,           % 不显示空格
+        showstringspaces=true,      % 字符串中显示空格
+        showtabs=false,             % 不显示TAB键
+        tabsize=4,                  % TAB被当成4个空格
+        frame=l,                    % 显示边框
+        numbers=left,               % 显示行号
+        numberstyle=\tiny,          % 行号字体为tiny
+        numbersep=9pt,              % 行号垂直位置
+        numberstyle=\normalsize,  % 行号字体的字号
+        stepnumber=1,               % 行号显示的步长
+        keywordstyle=\color{blue}\bfseries, % 特殊代码高亮蓝色加粗
+        backgroundcolor=\color{white},      % 背景色 需要 \usepackage{color}
+        escapeinside={/*@}{@*/}     % 添加注释，暂时离开
+        }
+\renewcommand{\lstlistingname}{CODE}
+\lstloadlanguages{% Check Dokumentation for further languages ...
+        MATLAB
+}
+\pagestyle{fancy}
+\fancypagestyle{plain}
+
+\def\yemeishow
+{
+\fancyhead{}                        % 清空页眉
+\fancyhead[C]{\xiaowu\song\yemei}
+\fancyfoot[C]{\xiaowu\song\thepage}
+}
+\def\yemeiclean
+{
+	\fancyhead{}                        % 清空页眉
+	\renewcommand{\headrulewidth}{0pt}       %把页眉线的宽度设为零，即去掉页眉线	
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   首页
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\makeZJUTthesisFirst
+{
+	\begin{center}
+	\sanhao\hei
+	\begin{figure}[h]
+	\centerline{\includegraphics[height=3.2cm]{figures/zjutlogo.jpg}}
+	\end{figure}
+	
+	\xiaoyi\hei 本科毕业设计论文\\[2.5cm]
+	\end{center}
+	\begin{center}
+	
+	\begin{quote}
+	\hei\sanhao
+	设计（论文）
+	\\[0.5cm]
+	题~~~~~~目\uline{\makebox[10cm]{\timu}}
+	\\[1.5cm]
+	指导教师
+	\\
+	姓~~~~~~名\uline{\makebox[10cm]{\laoshi}}
+	\\[1.5cm]
+	学~~~~~~生
+	\\
+	姓~~~~~~名\uline{\makebox[10cm]{\xuesheng}}
+	\\[1.5cm]
+	学~~~~~~生
+	\\
+	学~~~~~~号\uline{\makebox[10cm]{\xuehao}}
+	\\[1.5cm]
+	\xiaosan
+	\begin{center}
+	院~~~~~~系\uline{\makebox[6cm]{\xueyuan}}\\[1cm]
+	专~~~~~~业\uline{\makebox[6cm]{\zhuanye}}\\[1cm]
+	班~~~~~~级\uline{\makebox[6cm]{\banji}}\\[1cm]
+	
+	\end{center}
+	\end{quote}
+	\end{center}
+	\thispagestyle{empty}
+	\newpage
+	\pagestyle{fancy}
+\fancyhead{}                        % 清空页眉
+\fancyhead[C]{\xiaowu\song\yemei}
+\fancyfoot[C]{\xiaowu\song\thepage}
+\fancypagestyle{plain}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   文献综述的格式
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\makeZJUTthesisWXZS
+{
+
+	\setcounter{chapter}{0}			% 章节起始
+	\yemeiclean
+	\pagenumbering{arabic}          % 页码数字
+	\setcounter{page}{1}            % 页码起始数字
+	\let\cleardoublepage\relax
+	\begin{center}
+	\sanhao\hei~
+	\\[1cm]
+	\xiaoyi\hei 浙江工业大学理学院
+	
+	毕业论文（设计）文献综述\\[4.5cm]
+	\end{center}
+	\begin{center}
+	
+	\begin{quote}
+	\song\Sanhao
+	\Bsong学生姓名：\uline{\song\makebox[3cm]{\xuesheng}}
+	\Bsong学~~号：\song\uline{\makebox[4.6cm]{\xuehao}}
+	
+	\Bsong专~~~~~~业：\song{\uline{\makebox[10cm]{\zhuanye}}}
+	
+	\Bsong设计（论文）
+	
+	题~~~~~~目：\uline{\makebox[10cm]{\song\timu}}
+	
+	\Bsong{指导教师：}\uline{\makebox[10cm]{\song\laoshi}}
+	
+	\end{quote}
+	\end{center}
+	~\\[6cm]
+	\begin{center}
+	\song\xiaoer \shijian
+	\end{center}
+	\thispagestyle{empty}
+	\newpage
+	
+	\renewcommand{\chaptername}{\xCJKnumber{\thechapter}、}
+	\titleformat{\chapter}{\sihao\hei\bfseries}{\hei\chaptername}{0em}{}
+	\titlespacing{\chapter}{0pt}{\baselineskip}{0pt}
+	
+	\titlespacing{\section}{0pt}{\baselineskip}{0.1\baselineskip}
+	
+	\pagenumbering{arabic}          % 页码数字
+	\setcounter{page}{1}            % 页码起始数字
+	\newpage
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   开题报告的格式
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\makeZJUTthesisKTBG
+{
+	\yemeiclean
+	\setcounter{chapter}{0}			% 章节起始
+	
+	\pagenumbering{arabic}          % 页码数字
+	\setcounter{page}{1}            % 页码起始数字
+	\let\cleardoublepage\relax
+	\begin{center}
+	\sanhao\hei~
+	\\[1cm]
+	\xiaoyi\hei 浙江工业大学理学院
+	
+	毕业论文（设计）开题报告\\[4.5cm]
+	\end{center}
+	\begin{center}
+	
+	\begin{quote}
+	\song\Sanhao
+	\Bsong学生姓名：\uline{\song\makebox[3cm]{\xuesheng}}
+	\Bsong学~~号：\song\uline{\makebox[4.6cm]{\xuehao}}
+	
+	\Bsong专~~~~~~业：\song{\uline{\makebox[10cm]{\zhuanye}}}
+	
+	\Bsong设计（论文）
+	
+	题~~~~~~目：\uline{\makebox[10cm]{\song\timu}}
+	
+	\Bsong{指导教师：}\uline{\makebox[10cm]{\song\laoshi}}
+	
+	\end{quote}
+	\end{center}
+	~\\[6cm]
+	\begin{center}
+	\song\xiaoer \shijian
+	\end{center}
+	\thispagestyle{empty}
+	\newpage
+	
+	\renewcommand{\chaptername}{\xCJKnumber{\thechapter}、}
+	\titleformat{\chapter}{\sihao\hei\bfseries}{\hei\chaptername}{0em}{}
+	\titlespacing{\chapter}{0pt}{\baselineskip}{0pt}
+	
+	\titlespacing{\section}{0pt}{\baselineskip}{0.1\baselineskip}
+	
+	\pagenumbering{arabic}          % 页码数字
+	\setcounter{page}{1}            % 页码起始数字
+	\newpage
+}
+\yemeishow
