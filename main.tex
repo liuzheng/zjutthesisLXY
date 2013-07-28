@@ -1,0 +1,81 @@
+\documentclass[a4paper,12pt,oneside]{book}
+\input{setup/package}  	% 导入包管理
+\let\cleardoublepage\relax % 清除空白页,自己决定
+
+\begin{document}
+\input{body/info}		% 导入文章信息
+
+\input{setup/format}	% 导入格式
+\makeZJUTthesisFirst
+
+%\input{body/first}
+\input{body/abstract}
+\song\tableofcontents
+\addcontentsline{toc}{chapter}{目录}
+%\listoftables\Bsong
+%\addcontentsline{toc}{chapter}{表列}
+%\listoffigures
+%\addcontentsline{toc}{chapter}{图列}
+%\newpage
+
+%\pagenumbering{arabic}          % 页码数字
+%\setcounter{page}{1}            % 页码起始数字
+
+%\let\cleardoublepage\
+
+
+%\input{body/wxzs}			 % 文献综述
+%\input{body/ktbg}			 % 文献综述
+%\newpage
+%\input{body/chapter1}
+%\newpage
+%\input{body/chapter2}
+%\newpage
+%\input{body/chapter3}
+%\newpage
+%\input{body/chapter4}
+%\newpage
+\input{body/chapter5}
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%参考文献部分%%%%%%%%%%%%%%%%%%%
+\renewcommand\bibname{\fontsize{17.9pt}{18pt}\hei参考文献\hfill}
+\phantomsection					% 用于超链接指向
+\addcontentsline{toc}{chapter}{参考文献}
+\begin{thebibliography}{11}
+\wuhao
+\input{body/references}
+\end{thebibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%高级的参考文献%%%%%%%%%%%%%%%%%%%%
+%\defaultfont
+%\bibliographystyle{GBT7714-2005NLang-ZJUT}
+%\phantomsection
+%\markboth{参考文献}{参考文献}
+%\addcontentsline{toc}{chapter}{参考文献}       % 参考文献加入到中文目录
+%\nocite{*}                                     % 若将此命令屏蔽掉，则未引用的文献不会出现在文后的参考文献中。
+%\bibliography{references/reference}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%致谢部分%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+{\hfill{\Xiaoer\song致~~~~谢}\hfill}
+\phantomsection					% 用于超链接指向
+\addcontentsline{toc}{chapter}{致谢}
+\XIaosi
+~\\
+%这里需要一个空行，不然致谢部分首行不空两个字符
+
+\input{body/thx}
+
+
+%\newpage
+%\includepdfmerge{references/chapter1.pdf}
+%\includepdfmerge{references/chapter2.pdf}
+%\renewcommand\bibname{}
+%\chapter{参考文献}
+%\input{references/references}
+%\includepdfmerge{references/Fast.pdf,1-10}
+\end{document}
