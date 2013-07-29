@@ -1,2 +1,16 @@
-zjutthesisLXY
+浙江工业大学理学院学院本科毕业设计模板（个人试用）
 =============
+
+## 1.简介
+
+本模板是以浙江工业大学理学院学院本科生毕业设计论文要求
+（[Word模板](http://www.lxy.zjut.edu.cn/E_ReadNews.asp?NewsID=151)）设计的XeLaTeX模板，
+本人使用表示没问题。学院未对此表示是否可以接受PDF版本论文，请使用者与导师做好联系。
+
+## 2.使用方法
+
+通常只需编辑body/文件夹下的内容即可，在figures/文件夹下添加相应的图片文件，references/文件夹只为你存放论文的参考文献，对论文内容没有影响。
+
+fonts/文件夹下是字体文件，需要安装，linux请直接运行ziti.sh，windows暂未写脚本。
+
+编译生成文件仅需运行make.cmd(win)或make.sh(linux)即可。
