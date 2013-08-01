@@ -14,3 +14,15 @@
 fonts/文件夹下是字体文件，需要安装，linux请直接运行ziti.sh，windows暂未写脚本。
 
 编译生成文件仅需运行make.cmd(win)或make.sh(linux)即可。
+
+## TODO List
+
+1.化学方程式书写guide
+
+2.表格使用方法
+
+3.符号的完善
+
+4.数学公式的技巧
+
+5.代码展示说明
