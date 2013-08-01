@@ -28,34 +28,60 @@ $$f(x)=x^2-3x+1 \mbox{, where} -2 \leq x \leq 2$$
 只要这里出现过的，参照原使档一定写得出来。
 
 \subsection{函数}
-  Binomial: $f(x)={n\choose x}p^x(1-p)^{1-x}, \;\; x=0,1,2,\cdots,n$ 
+    \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=Binomial,caption=Binomial] 
+  $f(x)={n\choose x}p^x(1-p)^{1-x}, \;\; x=0,1,2,\cdots,n$ 
+  \end{lstlisting}
+  $f(x)={n\choose x}p^x(1-p)^{1-x}, \;\; x=0,1,2,\cdots,n$ 
+   
+  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=Poisson,caption=Poisson] 
+  $f(x)=\frac{e^{-\lambda}\lambda^x}{x!}, \;\;  x=0,1,2,\cdots$ 
+  \end{lstlisting}
+  $f(x)=\frac{e^{-\lambda}\lambda^x}{x!}, \;\;  x=0,1,2,\cdots$
   
-  Poisson: $f(x)=\frac{e^{-\lambda}\lambda^x}{x!}, \;\;  x=0,1,2,\cdots$ 
+  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=Gamma,caption=Gamma] 
+  $f(x)=\frac{1}{\Gamma(\alpha)\beta^\alpha}x^{\alpha-1}e^{-\frac{x}{\beta}}, \;\; x\geq 0$
+  \end{lstlisting}
+  $f(x)=\frac{1}{\Gamma(\alpha)\beta^\alpha}x^{\alpha-1}e^{-\frac{x}{\beta}}, \;\; x\geq 0$ 
   
-  Gamma: $f(x)=\frac{1}{\Gamma(\alpha)\beta^\alpha}x^{\alpha-1}e^{-\frac{x}{\beta}}, \;\; x\geq 0$ 
+  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=Normal,caption=Normal] 
+  $f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}, \;\;  -\infty < x < \infty $
+  \end{lstlisting}
+  $f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}, \;\;  -\infty < x < \infty $
   
-  Normal: $f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}, \;\;  -\infty < x < \infty $
-  
-  积分式与方程式编号：
+    \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=Int,caption=\song 积分式与方程式编号] 
+  \begin{equation}\label{gamma}%..........label后的名称自订，代表该方程式
+  \int^\infty_0 x^{\alpha-1}e^{-\lambda x} dx = \frac{\Gamma(\alpha)}{\lambda^{\alpha}}
+  \end{equation}
+  \end{lstlisting}
   \begin{equation}\label{gamma}%.................label后的名称自订，代表该方程式
   \int^\infty_0 x^{\alpha-1}e^{-\lambda x} dx = \frac{\Gamma(\alpha)}{\lambda^{\alpha}}
   \end{equation}
   
   方程式 (\ref{gamma})是广义 $\Gamma$ 积分。\footnote{\song这里利用方程式标签（label）来引用方程式，编号将自动更新。}
   
-  开根号：
+  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=Sqrt,caption=\song 开根号] 
+  $$f(x)=\sqrt[3]{\frac {\displaystyle 4-x^{3}}{\displaystyle 1+x^{2}}}$$
+  \end{lstlisting}
   $$f(x)=\sqrt[3]{\frac {\displaystyle 4-x^{3}}{\displaystyle 1+x^{2}}}$$
   
-  微分与极限（注意大刮号的使用）：
+  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=limit,caption=\song 微分与极限（注意大刮号的使用）] 
+  $$f'(x)=\frac{df(x)}{dx}=\lim_{h\rightarrow 0} \left( \frac{f(x+h)-f(x)}{h} \right)$$
+  \end{lstlisting}  
   $$f'(x)=\frac{df(x)}{dx}=\lim_{h\rightarrow 0}\left(\frac{f(x+h)-f(x)}{h}\right)$$
   
-  上下限的使用：
+    \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=upanddown,caption=\song 上下限的使用] 
+ $$\int_a^b f(x) dx \approx \lim_{n\rightarrow \infty}\sum_{k=1}^n f(x_k)\triangle x_k$$
+  \end{lstlisting} 
   $$\int_a^b f(x) dx \approx \lim_{n\rightarrow \infty}\sum_{k=1}^n f(x_k)\triangle x_k$$
   
-  最佳化问题：
+  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=bast,caption=\song 最佳化问题] 
+   $$\max_{\mathbf{u},\mathbf{u}^T\mathbf{u}=1} \mathbf{u}^T\Sigma_X\mathbf{u}$$
+  \end{lstlisting} 
   $$\max_{\mathbf{u},\mathbf{u}^T\mathbf{u}=1} \mathbf{u}^T\Sigma_X\mathbf{u}$$
   
-  几个符号：
+  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=somesymbles,caption=\song 几个符号]
+  $$\mathbf{e}=\mathbf{x}-\mathbf{x}_q=(I-P)\mathbf{x} \in V^{\perp}, \mbox{where}\; V\oplus V^{\perp}=R^p $$
+  \end{lstlisting} 
   $$\mathbf{e}=\mathbf{x}-\mathbf{x}_q=(I-P)\mathbf{x} \in V^{\perp}, \mbox{where}\; V\oplus V^{\perp}=R^p $$
 
 
