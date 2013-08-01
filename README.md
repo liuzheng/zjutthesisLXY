@@ -9,6 +9,12 @@
 
 ## 2.使用方法
 
+第一步请在body/info.tex下完成个人信息的填写
+
+body/ktbg.tex是开题报告
+
+body/wxzs.tex是文献综述
+
 通常只需编辑body/文件夹下的内容即可，在figures/文件夹下添加相应的图片文件，references/文件夹只为你存放论文的参考文献，对论文内容没有影响。
 
 fonts/文件夹下是字体文件，需要安装，linux请直接运行ziti.sh，windows暂未写脚本。
