@@ -28,27 +28,27 @@ $$f(x)=x^2-3x+1 \mbox{, where} -2 \leq x \leq 2$$
 只要这里出现过的，参照原使档一定写得出来。
 
 \subsection{函数}
-    \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=Binomial,caption=Binomial] 
+    \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=Binomial,caption=Binomial] 
   $f(x)={n\choose x}p^x(1-p)^{1-x}, \;\; x=0,1,2,\cdots,n$ 
   \end{lstlisting}
   $f(x)={n\choose x}p^x(1-p)^{1-x}, \;\; x=0,1,2,\cdots,n$ 
    
-  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=Poisson,caption=Poisson] 
+  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=Poisson,caption=Poisson] 
   $f(x)=\frac{e^{-\lambda}\lambda^x}{x!}, \;\;  x=0,1,2,\cdots$ 
   \end{lstlisting}
   $f(x)=\frac{e^{-\lambda}\lambda^x}{x!}, \;\;  x=0,1,2,\cdots$
   
-  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=Gamma,caption=Gamma] 
+  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=Gamma,caption=Gamma] 
   $f(x)=\frac{1}{\Gamma(\alpha)\beta^\alpha}x^{\alpha-1}e^{-\frac{x}{\beta}}, \;\; x\geq 0$
   \end{lstlisting}
   $f(x)=\frac{1}{\Gamma(\alpha)\beta^\alpha}x^{\alpha-1}e^{-\frac{x}{\beta}}, \;\; x\geq 0$ 
   
-  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=Normal,caption=Normal] 
+  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=Normal,caption=Normal] 
   $f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}, \;\;  -\infty < x < \infty $
   \end{lstlisting}
   $f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}, \;\;  -\infty < x < \infty $
   
-    \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=Int,caption=\song 积分式与方程式编号] 
+    \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=Int,caption=\song 积分式与方程式编号] 
   \begin{equation}\label{gamma}%..........label后的名称自订，代表该方程式
   \int^\infty_0 x^{\alpha-1}e^{-\lambda x} dx = \frac{\Gamma(\alpha)}{\lambda^{\alpha}}
   \end{equation}
@@ -59,27 +59,27 @@ $$f(x)=x^2-3x+1 \mbox{, where} -2 \leq x \leq 2$$
   
   方程式 (\ref{gamma})是广义 $\Gamma$ 积分。\footnote{\song这里利用方程式标签（label）来引用方程式，编号将自动更新。}
   
-  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=Sqrt,caption=\song 开根号] 
+  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=Sqrt,caption=\song 开根号] 
   $$f(x)=\sqrt[3]{\frac {\displaystyle 4-x^{3}}{\displaystyle 1+x^{2}}}$$
   \end{lstlisting}
   $$f(x)=\sqrt[3]{\frac {\displaystyle 4-x^{3}}{\displaystyle 1+x^{2}}}$$
   
-  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=limit,caption=\song 微分与极限（注意大刮号的使用）] 
+  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=limit,caption=\song 微分与极限（注意大刮号的使用）] 
   $$f'(x)=\frac{df(x)}{dx}=\lim_{h\rightarrow 0} \left( \frac{f(x+h)-f(x)}{h} \right)$$
   \end{lstlisting}  
   $$f'(x)=\frac{df(x)}{dx}=\lim_{h\rightarrow 0}\left(\frac{f(x+h)-f(x)}{h}\right)$$
   
-    \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=upanddown,caption=\song 上下限的使用] 
+    \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=upanddown,caption=\song 上下限的使用] 
  $$\int_a^b f(x) dx \approx \lim_{n\rightarrow \infty}\sum_{k=1}^n f(x_k)\triangle x_k$$
   \end{lstlisting} 
   $$\int_a^b f(x) dx \approx \lim_{n\rightarrow \infty}\sum_{k=1}^n f(x_k)\triangle x_k$$
   
-  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=bast,caption=\song 最佳化问题] 
+  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=bast,caption=\song 最佳化问题] 
    $$\max_{\mathbf{u},\mathbf{u}^T\mathbf{u}=1} \mathbf{u}^T\Sigma_X\mathbf{u}$$
   \end{lstlisting} 
   $$\max_{\mathbf{u},\mathbf{u}^T\mathbf{u}=1} \mathbf{u}^T\Sigma_X\mathbf{u}$$
   
-  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,label=somesymbles,caption=\song 几个符号]
+  \begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=somesymbles,caption=\song 几个符号]
   $$\mathbf{e}=\mathbf{x}-\mathbf{x}_q=(I-P)\mathbf{x} \in V^{\perp}, \mbox{where}\; V\oplus V^{\perp}=R^p $$
   \end{lstlisting} 
   $$\mathbf{e}=\mathbf{x}-\mathbf{x}_q=(I-P)\mathbf{x} \in V^{\perp}, \mbox{where}\; V\oplus V^{\perp}=R^p $$
@@ -102,6 +102,14 @@ $$f(x)=x^2-3x+1 \mbox{, where} -2 \leq x \leq 2$$
                 a+b & pn    & yz \\
                 b+c & mp    & xyz
             \end{array} \right] $$
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin}]
+						$$ A = \left[
+						\begin{array}{clr}
+							a+b & mnop  & xy \\
+							a+b & pn    & yz \\
+							b+c & mp    & xyz
+						\end{array} \right] $$
+\end{lstlisting} 
 
   \item 左右圆框刮号的使用及各式点状：
         $$ A=\left(
@@ -111,6 +119,15 @@ $$f(x)=x^2-3x+1 \mbox{, where} -2 \leq x \leq 2$$
                 \vdots & \vdots & \ddots & \vdots\\
                 a_{n1} & a_{n2} & \cdots & a_{nn}
             \end{array} \right) $$
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin}]
+				$$ A=\left(
+				\begin{array}{cccc}
+					a_{11} & a_{12} & \cdots & a_{1n}\\
+					a_{21} & a_{22} & \cdots & a_{2n}\\
+					\vdots & \vdots & \ddots & \vdots\\
+					a_{n1} & a_{n2} & \cdots & a_{nn}
+				\end{array} \right) $$
+\end{lstlisting} 
 
   \item 排列整齐的符号：
         $$ \begin{array}{clr}\\
@@ -118,30 +135,61 @@ $$f(x)=x^2-3x+1 \mbox{, where} -2 \leq x \leq 2$$
             a+b     & p+n & yz \\
             b+c     & m-n & xz
         \end{array} $$
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin}]
+					$$ \begin{array}{clr}\\
+						a+b+c   & m+n & xy \\
+						a+b     & p+n & yz \\
+						b+c     & m-n & xz
+					\end{array} $$
+\end{lstlisting}
 
     \item 等号对齐的函数组合（不编号）
         \begin{eqnarray*}
           b_1 &=& d_1+c_1 \\
           a_2 &=& c_2+e_2
         \end{eqnarray*}
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin}]
+						\begin{eqnarray*}
+						  b_1 &=& d_1+c_1 \\
+						  a_2 &=& c_2+e_2
+						\end{eqnarray*}
+\end{lstlisting}
 
     \item 等号对齐的函数组合（编号在最后一行）
         \begin{eqnarray}
 \nonumber b_1 &=& d_1+c_1 \\
           a_2 &=& c_2+e_2
         \end{eqnarray}
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin}]
+					\begin{eqnarray}
+						\nonumber b_1 &=& d_1+c_1 \\
+						a_2 &=& c_2+e_2
+					\end{eqnarray}
+\end{lstlisting}
 
     \item 使用巨集 amsmath 的指令 align（控制编号在第一行）
         \begin{align}
             b_1 &= d_1+c_1\\
             a_2 &= c_2+e_2 \notag
         \end{align}
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin}]
+					\begin{align}
+						b_1 &= d_1+c_1\\
+						a_2 &= c_2+e_2 \notag
+					\end{align}
+\end{lstlisting}
 
     \item 两组数学式分别对齐
     \begin{align}
         \alpha_1 &= \beta_1+\gamma_1+\delta_1, &a_1 &= b_1+c_1\\
         \alpha_2 &= \beta_2+\gamma_2+\delta_2, &a_2 &= b_2+c_2
     \end{align}
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin}]
+		\begin{align}
+			\alpha_1 &= \beta_1+\gamma_1+\delta_1, &a_1 &= b_1+c_1\\
+			\alpha_2 &= \beta_2+\gamma_2+\delta_2, &a_2 &= b_2+c_2
+		\end{align}
+\end{lstlisting}
 
     \item 编号在中间（split指令环境）
         \begin{equation}
@@ -150,30 +198,67 @@ $$f(x)=x^2-3x+1 \mbox{, where} -2 \leq x \leq 2$$
                 \alpha_2 &= \beta_2+\gamma_2
             \end{split}
         \end{equation}
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin}]
+				\begin{equation}
+					\begin{split}
+						\alpha_1 &= \beta_1+\gamma_1\\
+						\alpha_2 &= \beta_2+\gamma_2
+					\end{split}
+				\end{equation}
+\end{lstlisting}
+
     \item 只是居中对齐的数学式组（gather指令环境）
         \begin{gather}
         \alpha_1 + \beta_1\notag\\
         \alpha_2 + \beta_2 + \gamma_2\notag
         \end{gather}
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin}]
+				\begin{gather}
+					\alpha_1 + \beta_1\notag\\
+					\alpha_2 + \beta_2 + \gamma_2\notag
+				\end{gather}
+\end{lstlisting}
 
     \item 长数学式的表达（注意第二行加号的位置）
         \begin{align}
             y   &= x_1 + x_2 + x_3 \notag\\
                 &\quad + x_4 + x_5
         \end{align}
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin}]
+				\begin{align}
+					y   &= x_1 + x_2 + x_3 \notag\\
+						&\quad + x_4 + x_5
+				\end{align}
+\end{lstlisting}
 \end{enumerate}
 
 
 \subsection{其他}
 
   $$X_{n} \stackrel{d}{\longrightarrow} X$$\\
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin}]
+			$$X_{n} \stackrel{d}{\longrightarrow} X$$
+\end{lstlisting}
+
   $$\overbrace{X_{1} + \ldots + \underbrace{X_{15} + \ldots + X_{30}}}$$\\
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin}]
+$$\overbrace{X_{1} + \ldots + \underbrace{X_{15} + \ldots + X_{30}}}$$
+\end{lstlisting}
+
   \begin{equation*}
     G = \left\{\begin{array}{l}
           CLASS\#1 \;\;\mbox{if} \;\; \hat{\beta}^T\bf{x} \leq 0 \\
           CLASS\#2 \;\;\mbox{if} \;\; \hat{\beta}^T\bf{x} > 0
         \end{array}\right.
   \end{equation*}\\
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin}]
+  \begin{equation*}
+    G = \left\{\begin{array}{l}
+          CLASS\#1 \;\;\mbox{if} \;\; \hat{\beta}^T\bf{x} \leq 0 \\
+          CLASS\#2 \;\;\mbox{if} \;\; \hat{\beta}^T\bf{x} > 0
+        \end{array}\right.
+  \end{equation*}
+\end{lstlisting}
 
 以equation或align排版时，数学式会自动编上号码。文稿其他地方若要引述某数学式，
 可先以$\backslash$label指令加上标签，再使用$\backslash$ref指令引述。
