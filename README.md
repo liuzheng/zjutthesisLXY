@@ -3,8 +3,8 @@
 
 ## 1.简介
 
-本模板是以
-[浙江工业大学理学院学院本科生毕业设计论文要求](http://www.lxy.zjut.edu.cn/E_ReadNews.asp?NewsID=151)设计的XeLaTeX模板，
+本模板是以《
+[浙江工业大学理学院学院本科生毕业设计论文要求](http://www.lxy.zjut.edu.cn/E_ReadNews.asp?NewsID=151)》设计的XeLaTeX模板，
 本人使用表示没问题。学院未对此表示是否可以接受PDF版本论文，请使用者与导师做好联系。
 
 ## 2.使用方法
