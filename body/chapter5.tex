@@ -250,36 +250,38 @@ $:$&:
 
 \section{英语音标符号及其\LaTeX表达式}
 \song\wuhao
-下表中的音标是通过T3字体实现的，在输入音标前以此格式$\backslash$textipa\{音标名\}。
+%下表中的音标是通过T3字体实现的，在输入音标前以此格式$\backslash$textipa\{音标名\}。
+如需输入音标字符，请在音标命令前输入$\backslash$yinbiao，或者用花括号括住。
 
 \begin{table}[H]
 \song\wuhao
 \centering
+\yinbiao
 \begin{tabular}{|c|c|c|c|}
 \hline
 音标符号  &  \LaTeX表达式  &音标符号  &  \LaTeX表达式  \\
 \hline
-\textipa{\i}  &  \verb|\textipa{\i}|  &  \textipa{\textdyoghlig}  &  \verb|\textipa{\textdyoghlig}|  \\
+\i  &  \verb|\i|  &  \textdyoghlig  &  \verb|\textdyoghlig|  \\
 \hline
-\textipa{\ae}  &  \verb|\textipa{\ae}|  &  \textipa{\textturnv}  &  \verb|\textipa{\textturnv}|  \\
+\ae  &  \verb|\ae|  &  \textturnv  &  \verb|\textturnv|  \\
 \hline
-\textipa{\j}  &  \verb|\textipa{\j}| &  \textipa{\textschwa}  &  \verb|\textipa{\textschwa}|   \\
+\j  &  \verb|\j| &  \textschwa  &  \verb|\textschwa|   \\
 \hline
-\textipa{\textdzlig}  &  \verb|\textipa{\textdzlig}|  &  \textipa{\textscriptg}  &  \verb|\textipa{\textscriptg}|  \\
+\textdzlig  &  \verb|\textdzlig|  &  \textscriptg  &  \verb|\textscriptg|  \\
 \hline
-\textipa{\textesh}  &  \verb|\textipa{\textesh}| &  \textipa{\texttheta}  &  \verb|\textipa{\texttheta}|   \\
+\textesh  &  \verb|\textesh| &  \texttheta  &  \verb|\texttheta|   \\
 \hline
-\textipa{\textteshlig}  &  \verb|\textipa{\textteshlig}|   &  \textipa{\textupsilon}  &  \verb|\textipa{\textupsilon}|  \\
+\textteshlig  &  \verb|\textteshlig|   &  \textupsilon  &  \verb|\textupsilon|  \\
 \hline
-\textipa{\textscripta}  &\verb|\textipa{\textscripta}|&  \textipa{\dh}  &  \verb|\textipa{\dh}|\\
+\textscripta  &\verb|\textscripta|&  \dh  &  \verb|\dh|\\
 \hline
-\textipa{\textepsilon}  &  \verb|\textipa{\textepsilon}| &  \textipa{\textopeno}  &  \verb|\textipa{\textopeno}|\\
+\textepsilon  &  \verb|\textepsilon| &  \textopeno  &  \verb|\textopeno|\\
 \hline
-\textipa{\textyogh}  & \verb|\textipa{\textyogh}|&  \textipa{\ng}  &  \verb|\textipa{\ng}|\\
+\textyogh  & \verb|\textyogh|&  \ng  &  \verb|\ng|\\
 \hline
-\textipa{\textprimstress}\song（重音）  &  \verb|\textipa{\textprimstress}|  &  \textipa{\textsecstress}\song（次重音）&  \verb|\textipa{\textsecstress}|  \\
+\textprimstress\song（重音）  &  \verb|\textprimstress|  &  \textsecstress\song（次重音）&  \verb|\textsecstress|  \\
 \hline
- \textipa{\textlengthmark}\song（长音）  &  \verb|\textipa{\textlengthmark}|  &   &   \\\hline
+ \textlengthmark\song（长音）  &  \verb|\textlengthmark|  &   &   \\\hline
 \end{tabular}
 \end{table}
 
@@ -291,6 +293,7 @@ $:$&:
 
 \begin{table}[H]
 \centering
+\yinbiao
 \begin{tabular}{|*{8}{c|}}\hline
 音标  &  \LaTeX表达式  &音标  &  \LaTeX表达式  &音标  &  \LaTeX表达式&音标  &  \LaTeX表达式  \\
 \hline

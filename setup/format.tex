@@ -13,7 +13,7 @@
 \newcommand{\tablecell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}   % 表格内换行，用法\tablecell{c}{balabalba\\balabalba}
 \graphicspath{{figures/}}  		% 图路径 
 
-%%%%%%字体部分%%%%%%%%
+%%%%%%字体部分
 \newfontfamily\fangsong{Adobe Fangsong Std}     % 仿宋
 \newfontfamily\hei{Adobe Heiti Std}             % 黑体
 \newfontfamily\kai{Adobe Kaiti Std}             % 楷体
@@ -23,6 +23,14 @@
 \newfontfamily\times{Times New Roman}
 \newcommand{\shijian}{\number\year~年~\number\month~月~\number\day~日}
 \renewcommand{\textipa}[1]{\fontencoding{T3}\selectfont #1 \times}
+\font\yinbiao="DejaVu Serif" at 11pt      % 修复重音符号bug
+%\renewcommand{\t}[1]{\zhongyinfuhao \t{#1} \times}
+%\renewcommand{\b}[1]{\zhongyinfuhao \b{#1} \times}
+%\renewcommand{\c}[1]{\zhongyinfuhao \c{#1} \times}
+%\renewcommand{\.}[1]{\zhongyinfuhao \.{#1} \times}
+%\renewcommand{\r}[1]{\zhongyinfuhao \r{#1} \times}
+%\renewcommand{\t}[1]{\zhongyinfuhao #1 \times}
+%\renewcommand{\t}[1]{\zhongyinfuhao #1 \times}
 
 %%%%%%%字号%%%%%%%
 %%%%%%单倍%%%%%%%%
