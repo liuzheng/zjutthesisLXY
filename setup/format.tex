@@ -7,6 +7,25 @@
 \renewcommand{\sfdefault}{phv}
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
+\newcommand{\tab}{\hspace{3em}}
+
+\definecolor{matlab-string}{RGB}{160, 32, 240}
+\definecolor{matlab-keyword}{RGB}{0, 0, 255}
+\definecolor{matlab-comment}{RGB}{34, 139, 34}
+\definecolor{xml-constant}{RGB}{0, 0, 0}
+
+\newcommand{\ms}[1]{\textcolor{matlab-string}{#1}}
+\newcommand{\mk}[1]{\textcolor{matlab-keyword}{#1}}
+\newcommand{\mc}[1]{\textcolor{matlab-comment}{#1}}
+
+\newcommand{\xt}[1]{\textcolor{matlab-keyword}{<#1>}}
+\newcommand{\xa}[1]{\textcolor{matlab-string}{#1}}
+\newcommand{\xs}[1]{\textcolor{matlab-string}{"#1"}}
+\newcommand{\xc}[1]{\textcolor{matlab-comment}{<!-- #1 -->}}
+\renewcommand{\xi}[1]{\textcolor{xml-constant}{#1}}
+
+\newenvironment{code}{\alltt\small}{\endalltt}
+\newenvironment{boxedcode}{\begin{boxedminipage}{\linewidth}\begin{code}}{\end{code}\end{boxedminipage}}
 
 % 行距 1.25
 \renewcommand{\baselinestretch}{1.25}
